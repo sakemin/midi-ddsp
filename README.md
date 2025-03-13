@@ -34,6 +34,34 @@ pip install midi-ddsp
 
 MIDI-DDSP is developed using tensorflow 2.7.0. Newer tensorflow version should also work.
 
+## Download Model Weights
+
+To download the model weights, please run the following command:
+
+```
+midi_ddsp_download_model_weights
+```
+
+## Run synthesize.py
+
+To run `synthesize.py`, please run the following command:
+
+```
+python3 synthesize.py --midi_file ../your/midi/file/path/psycho_hum_1.mid --instrument violin --auto-octave-shift --output_dir outputs/
+```
+
+## Command Line Arguments
+
+The synthesize.py script accepts the following arguments:
+
+- `--midi_file`: Path to input MIDI file (required)
+- `--instrument`: Instrument name to synthesize with (default: violin)
+  - Supported instruments: violin, viola, cello, double_bass, flute, oboe, clarinet, saxophone, bassoon, trumpet, horn, trombone, tuba, guitar
+- `--auto-octave-shift`: Auto octave shift for each instrument's pitch range. If enabled, the pitch offset will be automatically calculated based on the instrument's pitch range and `pitch_offset` will be ignored
+- `--pitch_offset`: Pitch offset in semitones (default: 0)
+- `--output_dir`: Output directory for saving files (default: None, will save in current directory)
+
+
 ## Train MIDI-DDSP
 
 To train MIDI-DDSP, please first install midi-ddsp and clone the MIDI-DDSP repository:
