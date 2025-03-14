@@ -4,7 +4,7 @@ INST_PITCH_RANGE_DICT = {
     'violin': {'min': 55, 'max': 100},  # G3 to E7
     'viola': {'min': 48, 'max': 93},    # C3 to A6
     'cello': {'min': 36, 'max': 84},    # C2 to C6
-    'double bass': {'min': 28, 'max': 67},  # E1 to G4
+    'double_bass': {'min': 28, 'max': 67},  # E1 to G4
     'flute': {'min': 60, 'max': 98},    # C4 to D7
     'oboe': {'min': 58, 'max': 91},     # Bb3 to G6
     'clarinet': {'min': 50, 'max': 91},  # D3 to G6
@@ -21,7 +21,7 @@ INST_PITCH_RANGE_EXTENDED_DICT = {
     'violin': {'min': 55, 'max': 105},  # G3 to A7
     'viola': {'min': 48, 'max': 96},    # C3 to C7
     'cello': {'min': 36, 'max': 88},    # C2 to E6
-    'double bass': {'min': 24, 'max': 71},  # C1 to B4
+    'double_bass': {'min': 24, 'max': 71},  # C1 to B4
     'flute': {'min': 59, 'max': 101},   # B3 to F7
     'oboe': {'min': 57, 'max': 96},     # A3 to C7
     'clarinet': {'min': 50, 'max': 94}, # D3 to Bb6

@@ -26,7 +26,7 @@ def main():
   synthesis_generator, expression_generator = load_pretrained_model()
 
   # Get instrument ID
-  instrument_id = INST_NAME_TO_ID_DICT[args.instrument]
+  instrument_id = INST_NAME_TO_ID_DICT[args.instrument.replace('_', ' ')] # replace _ with space for double_bass
 
   if args.auto_octave_shift:
     # Get instrument's pitch range
